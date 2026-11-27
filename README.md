@@ -28,11 +28,11 @@ The dev server prints a local URL. Open it in a browser. Edits under `src/` relo
 
 ## Scripts
 
-| Command | Description |
-| --- | --- |
-| `npm run dev` | Start the Vite development server |
-| `npm run build` | Type-check with `vue-tsc`, then build for production |
-| `npm run preview` | Serve the production build locally |
+| Command           | Description                                          |
+| ----------------- | ---------------------------------------------------- |
+| `npm run dev`     | Start the Vite development server                    |
+| `npm run build`   | Type-check with `vue-tsc`, then build for production |
+| `npm run preview` | Serve the production build locally                   |
 
 Production files are written to `dist/`.
 
