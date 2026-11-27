@@ -39,22 +39,22 @@ Production files are written to `dist/`.
 ## Project structure
 
 ```
-.
-├── public/              # Static files served as-is
-├── src/
-│   ├── assets/          # Images and other imported assets
-│   ├── components/      # Vue components
-│   ├── App.vue          # Root component
-│   ├── main.ts          # Application entry
-│   └── style.css        # Global styles
-├── index.html
-├── vite.config.ts
-└── tsconfig.json
+src/
+├── assets/styles/       # Global styles and design tokens
+├── components/          # common/ and layout/
+├── layouts/
+├── pages/               # Route pages
+├── router/index.ts
+├── stores/
+├── services/api.ts      # Axios instance
+├── types/
+├── App.vue
+└── main.ts
 ```
 
 ## Environment variables
 
-Local configuration belongs in `.env`. Vite only exposes variables prefixed with `VITE_` to client code. `.env` files are gitignored. A shared template named `.env.example` can be committed when the project needs one.
+Copy `.env.example` to `.env`. `VITE_API_BASE_URL` is the Axios base URL. Vite only exposes variables prefixed with `VITE_` to client code. `.env` is gitignored.
 
 ## Editor setup
 
